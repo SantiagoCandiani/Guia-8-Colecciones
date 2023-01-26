@@ -58,10 +58,10 @@ public class Servicios {
     public void modificarPrecio() {
 
         System.out.println("* A que producto desea cambiar el precio?");
-        String cambiar = leer.next();
+        String productoCambiar = leer.next();
 
         for (String aux : ListaDeProductos.keySet()) {
-            if (aux.equalsIgnoreCase(cambiar)) {
+            if (aux.equalsIgnoreCase(productoCambiar)) {
                 System.out.println("* Ingrese el precio nuevo:");
                 ListaDeProductos.replace(aux, leer.nextDouble());
             }

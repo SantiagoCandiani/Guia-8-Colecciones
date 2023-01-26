@@ -54,8 +54,8 @@ public class Servicios {
         
         int contador=0;
 
-        while (it.hasNext()) {
-            if (it.next().getRaza().equals(nombreRaza)) {
+        while (it.hasNext()) {//si hay siguiente hace el if
+            if (it.next().getRaza().equalsIgnoreCase(nombreRaza)) {
                 it.remove();
                 contador++;
             }
